@@ -56,4 +56,8 @@ make regress opts='--filter=rv64'
 ```bash
 make aapg opts="--config=<testConfig> --test_count=1 --parallel=6 --aapg_opts='--seed=<seed_value>'" CONFIG_ISA=RV64IMAFDC
 ```
-   
+
+### To run AAPG test
+```bash
+make regress opts='--list=aapg.list'
+```
