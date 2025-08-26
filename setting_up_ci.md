@@ -16,7 +16,7 @@ docker_runner echo "Hello"
 ```
 
 Follow the below steps to create a new CI-CD action.
-1. Create a .github/workflow/{FILENAME}.yml in the master branch.
+1. Create a .github/workflow/{FILENAME}.yml in the master branch (If this is not done, the option to run is not available for some reason).
 2. Create a branch from your working branch and create the same file created previously in the new branch.
 3. Start editing the file with the commands. An example workflow file can be found [here](https://github.com/Mindgrove-Technologies/vision-soc/blob/master/.github/workflows/Release_verilog_generation.yml#L14).
 4. Go to 'Actions' which is present in the repo's top bar and select your action present in the left. Select the drop down 'Run workflow', enter the necessary options, select the branch etc. and Wolaaah !!!
