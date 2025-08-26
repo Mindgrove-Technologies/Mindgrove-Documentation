@@ -57,7 +57,7 @@ on:
         required: true
         type: string
 ``` 
-3. To use current date and time:
+3. To get current date and time:
 ```bash
       - name: Setting up the environment
         run: |
@@ -70,7 +70,7 @@ The above will create an environment variable. It can be used like below:
           mkdir -p release/
           mkdir -p release/{{ env.CURRENT_DATETIME }}
 ```
-4. A specific tool named 'yq' has been installed in all runners which helps in updating yaml easily. For example, let's say, the speific run needs 'num_harts' to be updated to '2':
+4. A specific tool named 'yq' has been installed in all runners which helps in updating yaml easily. For example, let's say, the specific run needs 'num_harts' to be updated to '2':
 ```bash
 yq -i '(.num_harts) = 2' sample_config/c64_multicore/core64.yaml
 ```
